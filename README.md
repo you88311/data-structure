@@ -1,3 +1,3 @@
 자료구조
 ========================
-1. 단일 연결 리스트(singly-linked-list)
+1. singly-linked-list(단일 연결 리스트)
