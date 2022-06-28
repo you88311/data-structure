@@ -51,7 +51,7 @@ public class SinglyLinkedList<T> {
         add(0, data);
     }
 
-    public void delete(int index) {
+    public void deleteByIndex(int index) {
         if (index == 0) {
             this.head = this.head.next;
         } else {
@@ -59,6 +59,11 @@ public class SinglyLinkedList<T> {
             preNode.next = preNode.next.next;
         }
         this.length--;
+    }
+
+    public void delete(T deleteData ){
+        int deleteIndex = getIndex(deleteData);
+        deleteByIndex(deleteIndex);
     }
 
     public void deleteAll() {

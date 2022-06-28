@@ -49,7 +49,7 @@ public class Main {
         list.showAll();
 
         System.out.printf("\n값이 5인 index4 노드 삭제 ");
-        list.delete(4);
+        list.deleteByIndex(4);
         System.out.printf("\n5가 있는지: "+list.isInList("5") + "\n");
 
         System.out.printf("\nisEmpty?: " + list.isEmpty() + "\n");
