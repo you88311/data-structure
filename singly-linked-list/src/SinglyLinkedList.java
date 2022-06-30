@@ -61,7 +61,7 @@ public class SinglyLinkedList<T> {
         this.length--;
     }
 
-    public void delete(T deleteData ){
+    public void delete(T deleteData) {
         int deleteIndex = getIndex(deleteData);
         deleteByIndex(deleteIndex);
     }
