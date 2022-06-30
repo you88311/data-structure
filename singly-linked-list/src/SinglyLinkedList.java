@@ -14,7 +14,6 @@ public class SinglyLinkedList<T> {
             node = node.next;
             nodeIndex++;
         }
-
         return node;
     }
 
@@ -89,16 +88,16 @@ public class SinglyLinkedList<T> {
         return this.length;
     }
 
-    public void showAll() {
+    public void display() {
         if (isEmpty()) {
             System.out.println("비어있습니다");
             return;
         }
         Node<T> node = head;
         for (int i = 0; i < this.length; i++) {
-            System.out.printf("%d번째 노드: ", i + 1);
-            System.out.println(node.data);
+            System.out.print(node.data + " ");
             node = node.next;
         }
+        System.out.println();
     }
 }
