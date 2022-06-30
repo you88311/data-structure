@@ -28,5 +28,6 @@ public class Main {
 //        Node<String> node = new Node<String>();
 //        doublyLinkedList.removeNode(node);
           //없는 값을 삭제하려고 하기에 ArrayIndexOutOfBoundsException 발생시킴
+
     }
 }
