@@ -1,11 +1,13 @@
 public class SinglyLinkedList<T> {
 
-    Node<T> head = new Node<>();
+    Node<T> head = null;
     int length = 0;
 
     public Node<T> findNode(int searchIndex) {
         if (searchIndex < 0 || this.length <= searchIndex)
             throw new ArrayIndexOutOfBoundsException();
+        if (isEmpty())
+            throw new NullPointerException();
 
         Node<T> node = head;
         int nodeIndex = 0;
