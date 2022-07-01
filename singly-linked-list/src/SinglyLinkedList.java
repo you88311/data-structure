@@ -1,5 +1,4 @@
 public class SinglyLinkedList<T> {
-
     Node<T> head = null;
     int length = 0;
 
