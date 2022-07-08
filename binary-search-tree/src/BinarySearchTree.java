@@ -24,7 +24,7 @@ public class BinarySearchTree {
     }
 
     public void remove(int key){
-
+        root = removeNode(root, key);
     }
 
     private Node removeNode(Node node, int key){
@@ -36,15 +36,21 @@ public class BinarySearchTree {
         else if (node.key < key) {
             node.left = removeNode(node.left, key);
         }else {
-            //삭제할 노드를 찾음
+            //삭제할 노드를 찾은 경우
             if(node.left != null){
+                //왼쪽 서브트리에서 가장 오른쪽에 있는 값 찾아 대체하기
                 Node child = findMaxNode(node.left);
-                Node tmp = child;
-                child = node;
-                node = tmp;
+                int removedKey = node.key;
+                node.key = child.key;
+                child.key = removedKey;
             } else if (node.right != null) {
+                //오른족 서브트리에서 가장 왼쪽에 있는 값 찾아 대체하기
                 Node child = findMinNode(node.right);
+                int removedKey = node.key;
+                node.key = child.key;
+                child.key = removedKey;
             }else {
+                //삭제할 노드가 단말 노드인 경우 부모 노드와의 연결 종료
                 return null;
             }
         }
@@ -65,6 +71,8 @@ public class BinarySearchTree {
         else
             return findMinNode(node.left);
     }
+
+    
 
 
 }
