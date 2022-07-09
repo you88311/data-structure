@@ -14,10 +14,15 @@ public class Main {
         bst.ascendingTraversal();
         bst.descendingTraversal();
 
+        System.out.println("key 12 갖는 노드 삭제");
         bst.remove(12);
+
         bst.ascendingTraversal();
         bst.descendingTraversal();
 
+        bst.search(11);
+        //트리에 없는 key 찾으려 하여 오류 발생
+//        bst.search(12);
     }
 
 }

@@ -43,7 +43,7 @@ public class BinarySearchTree {
                 int removedKey = node.key;
                 node.key = child.key;
                 child.key = removedKey;
-
+                //다시 옮겨진 위치에서 서브트리에 대해 재귀적으로 실행
                 node.left = removeNode(node.left, key);
             } else if (node.right != null) {
                 //오른족 서브트리에서 가장 왼쪽에 있는 값 찾아 대체하기
@@ -51,7 +51,7 @@ public class BinarySearchTree {
                 int removedKey = node.key;
                 node.key = child.key;
                 child.key = removedKey;
-
+                //다시 옮겨진 위치에서 서브트리에 대해 재귀적으로 실행
                 node.right = removeNode(node.right, key);
             } else {
                 //삭제할 노드가 단말 노드인 경우 부모 노드와의 연결 종료
@@ -80,7 +80,7 @@ public class BinarySearchTree {
         searchNode(root, key);
     }
 
-    public Node searchNode(Node node, int key) {
+    private Node searchNode(Node node, int key) {
         if (node == null)
             throw new RuntimeException("해당 값을 가진 노드를 찾을 수 없습니다.");
 
