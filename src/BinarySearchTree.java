@@ -8,17 +8,17 @@ public class BinarySearchTree {
         if (root == null) {
             root = newNode;
         } else {
-            root = insertNode(root, newNode);
+            root = addNode(root, newNode);
         }
     }
 
-    private Node insertNode(Node node, Node newNode) {
+    private Node addNode(Node node, Node newNode) {
         if (node == null)
             return newNode;
         else if (node.key > newNode.key)
-            node.left = insertNode(node.left, newNode);
+            node.left = addNode(node.left, newNode);
         else
-            node.right = insertNode(node.right, newNode);
+            node.right = addNode(node.right, newNode);
 
         return node;
     }
