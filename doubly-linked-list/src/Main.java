@@ -6,6 +6,7 @@ public class Main {
         doublyLinkedList.addLast("D");
         doublyLinkedList.addLast("E");
         doublyLinkedList.add(2, "C");
+
         doublyLinkedList.display();
 
         System.out.println("값 C 갖는 노드의 index: " + doublyLinkedList.indexOf("C"));

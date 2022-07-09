@@ -95,6 +95,7 @@ public class SinglyLinkedList<T> {
             return;
         }
         Node<T> node = head;
+        System.out.print("현재 단일 연결리스트에 있는 값: ");
         for (int i = 0; i < this.length; i++) {
             System.out.print(node.data + " ");
             node = node.next;

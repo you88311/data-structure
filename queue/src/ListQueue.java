@@ -19,8 +19,7 @@ public class ListQueue<T> {
 
     public T dequeue(){
         if(isEmpty()){
-            System.out.println("큐가 비었습니다");
-            return null;
+            throw new RuntimeException("큐가 비었습니다.");
         }
 
         T data = front.data;

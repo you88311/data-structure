@@ -153,6 +153,7 @@ public class DoublyLinkedList<T> {
         }
 
         Node<T> pointer = this.head;
+        System.out.print("현재 이중 연결 리스트에 있는 값: ");
         while (pointer != null) {
             System.out.printf(pointer.data + " ");
             pointer = pointer.right;

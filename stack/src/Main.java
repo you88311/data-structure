@@ -1,14 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-
+        System.out.println("배열로 구현한 stack");
         ArrayStack arrayStack = new ArrayStack(1000);
+        System.out.println("1,2,3,4,5 순으로 push()");
         arrayStack.push(1);
         arrayStack.push(2);
         arrayStack.push(3);
         arrayStack.push(4);
         arrayStack.push(5);
 
-        System.out.println("배열로 구현한 stack");
         System.out.print("stack 가장 위에 있는 데이터: ");
         System.out.println(arrayStack.peek());
 
@@ -26,6 +26,7 @@ public class Main {
         System.out.println("list로 구현한 stack");
         ListStack<Integer> listStack = new ListStack<>();
 
+        System.out.println("1,2,3,4,5 순으로 push()");
         listStack.push(1);
         listStack.push(2);
         listStack.push(3);
