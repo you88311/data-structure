@@ -35,6 +35,4 @@ public class Main {
         //큐가 비어있는데 dequeue하려는 경우
         System.out.println(listQueue.dequeue());
     }
-
-
 }

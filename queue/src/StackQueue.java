@@ -31,7 +31,6 @@ public class StackQueue {
             System.out.println("큐가 비어있습니다");
             throw new ArrayIndexOutOfBoundsException();
         }
-
         Object dequeuedData = queue[front];
         queue[front++] = null;
         front = front % queue.length;
