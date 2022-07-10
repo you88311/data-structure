@@ -5,3 +5,4 @@
 3. [스택(stack)](https://you88.tistory.com/29?category=1107187)
 4. [큐(queue)](https://you88.tistory.com/30?category=1107187)
 5. [이진 탐색 트리(binary-search-tree)](https://you88.tistory.com/31?category=1107187)
+6. [힙(heap)](https://you88.tistory.com/33)
