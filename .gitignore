@@ -1,7 +1,7 @@
 #gitignore
 **/.idea
-.idea/*
+.idea/
 
-**/out/
+**/out
 *.iml
 **/*.iml
